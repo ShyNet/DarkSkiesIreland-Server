@@ -1,0 +1,3 @@
+module CurrentWeatherHelper
+
+end
