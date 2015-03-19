@@ -1,0 +1,98 @@
+{
+    "<%= @cloud_json['ForecastWeather']['Days'][0]['date'] %>": {
+        "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json, 0, 6) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['vis_km'] %>"
+            }
+        },
+        "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,0, 7) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['vis_km'] %>"
+            }
+        }
+    },
+    "<%= @cloud_json['ForecastWeather']['Days'][1]['date'] %>": {
+        "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,1,0) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['vis_km'] %>"
+            }
+        },
+        "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,1,1) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['vis_km'] %>"
+            }
+        },
+        "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,1,2) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['vis_km'] %>"
+            }
+        },
+        "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,1,6) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['vis_km'] %>"
+            }
+        },
+        "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,1,7) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['vis_km'] %>"
+            }
+        }
+    },
+    "<%= @cloud_json['ForecastWeather']['Days'][2]['date'] %>": {
+        "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,2,0) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['vis_km'] %>"
+            }
+        },
+        "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,2,1) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['vis_km'] %>"
+            }
+        },
+        "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['time'] %>": {
+            "weather": {
+                "cloud description": "<%= get_weather_desc(@cloud_json,2,2) %>",
+                "cloud cover": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['cloudtotal_pct'] %>",
+                "temperature": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['temp_c'] %>",
+                "windspeed": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['windspd_kmh'] %>",
+                "visibility": "<%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['vis_km'] %>"
+            }
+        }
+    }
+}

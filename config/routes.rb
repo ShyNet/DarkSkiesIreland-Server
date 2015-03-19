@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
 
+  get 'best_location/build_gps_points'
+
+  get 'best_location/find_best'
+
+  get 'seven_days' => 'seven_day_fore_cast#seven_day_report'
+
   get 'current' => 'current_weather#report'
 
   # The priority is based upon order of creation: first created -> highest priority.
