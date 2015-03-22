@@ -1,0 +1,12 @@
+{
+    "current weather": {
+        "lat": "<%= @cloud_json['lat'] %>",
+        "long": "<%= @cloud_json['lon'] %>",
+        "conditions matched": "<%= @cloud_json['ConditionMatched']%>",
+        "cloud description": "<%= @cloud_json['CurrentWeather']['cloudtotal_pct'] %>",
+        "cloud cover": "<%= @cloud_json['CurrentWeather']['wx_desc'] %>",
+        "temperature": "<%= @cloud_json['CurrentWeather']['temp_c'] %>",
+        "windspeed": "<%= @cloud_json['CurrentWeather']['windspd_kmh'] %>",
+        "visibility": "<%= @cloud_json['CurrentWeather']['vis_km'] %>"
+    }
+}

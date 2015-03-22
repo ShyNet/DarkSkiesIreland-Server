@@ -12,9 +12,6 @@ class CurrentWeatherController < ApplicationController
     @cloud_json = JSON.parse(cloud_data)
 
   end
-
-
-
 end
 
 
