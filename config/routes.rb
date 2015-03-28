@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   get 'best_location' => 'best_location#find_best'
 
-  get 'seven_days' => 'seven_day_fore_cast#seven_day_report'
+  get 'three_days' => 'seven_day_fore_cast#seven_day_report'
 
-  get 'current' => 'current_weather#report'
+  get 'current' => 'current_weather#show_current'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
