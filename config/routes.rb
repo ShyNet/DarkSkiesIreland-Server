@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
 
+  post 'register/add_user'
+
+  post 'login/verify_details'
+
   get 'best_three_days/find_best_location'
 
   get 'best_location' => 'best_location#find_best'
