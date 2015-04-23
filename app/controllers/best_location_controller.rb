@@ -7,4 +7,8 @@ class BestLocationController < ApplicationController
 
     @cloud_json = BestCondition::cycle_through_locations(lat, long, date, request_duration)
   end
+
+  def mobile_web
+
+  end
 end

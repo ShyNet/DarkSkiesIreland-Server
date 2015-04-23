@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'best_location' => 'best_location#find_best'
 
+  get 'mobile_web' => 'best_location#mobile_web'
+
   get 'three_days' => 'three_day_fore_cast#seven_day_report'
 
   get 'current' => 'current_weather#show_current'
