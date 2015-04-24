@@ -11,7 +11,9 @@ Rails.application.routes.draw do
 
   get 'mobile_web' => 'best_location#mobile_web'
 
-  get 'three_days' => 'three_day_fore_cast#seven_day_report'
+  get 'three_days' => 'three_day_fore_cast#seven_day_request'
+
+  get 'mweb_seven_day_report' => 'three_day_fore_cast#mweb_seven_day_report'
 
   get 'current' => 'current_weather#show_current'
 

@@ -1,0 +1,409 @@
+<div class='rows'>
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][0]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 0, 6) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][6]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][0]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 0, 7) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][0]['Timeframes'][7]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 1, 0) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 1, 1) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][1]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 1, 2) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][2]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 1, 0) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][0]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 1, 6) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][6]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 1, 7) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][1]['Timeframes'][7]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][2]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 2, 0) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][0]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][2]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 2, 1) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][1]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-hover ">
+    <thead>
+    <tr class="warning">
+      <th>#</th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][2]['date'] %></th>
+      <th><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['time'] %></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="success">
+      <td>1</td>
+      <td>Cloud Description</td>
+      <td><%= get_weather_desc(@cloud_json, 2, 2) %></td>
+    </tr>
+    <tr class="info">
+      <td>2</td>
+      <td>Cloud Cover</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['cloudtotal_pct'] %></td>
+    </tr>
+    <tr class="success">
+      <td>3</td>
+      <td>Temperature</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['temp_c'] %></td>
+    </tr>
+    <tr class="info">
+      <td>4</td>
+      <td>Windspeed</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['windspd_kmh'] %></td>
+    </tr>
+    <tr class="success">
+      <td>5</td>
+      <td>Visibility</td>
+      <td><%= @cloud_json['ForecastWeather']['Days'][2]['Timeframes'][2]['vis_km'] %></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
