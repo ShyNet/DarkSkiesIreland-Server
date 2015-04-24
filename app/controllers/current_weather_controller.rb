@@ -6,6 +6,14 @@ class CurrentWeatherController < ApplicationController
     request_duration = 'includecurrent'
 
     @cloud_json = WeatherObject::build_request(lat, long, date, request_duration)
+
+    if request.headers['Content-Type'] == 'text/html'
+      render :mobile_web
+    end
+  end
+
+  def mobile_web
+
   end
 end
 

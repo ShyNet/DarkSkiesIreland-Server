@@ -6,6 +6,10 @@ class BestLocationController < ApplicationController
     request_duration = 'includecurrent'
 
     @cloud_json = BestCondition::cycle_through_locations(lat, long, date, request_duration)
+
+    if request.headers['Content-Type'] == 'text/html'
+      render :mobile_web
+    end
   end
 
   def mobile_web
