@@ -7,12 +7,15 @@ class BestLocationController < ApplicationController
 
     @cloud_json = BestCondition::cycle_through_locations(lat, long, date, request_duration)
 
+    response.headers['lat'] = (@cloud_json['CurrentWeather']['lat']).to_s
+    response.headers['long'] = (@cloud_json['CurrentWeather']['lon']).to_s
+
     if request.headers['Content-Type'] == 'text/html'
       render :mobile_web
     end
   end
 
   def mobile_web
-    response.headers['lat', @cloud_json['CurrentWeather']['lat'], 'long', @cloud_json['CurrentWeather']['long']]
+
   end
 end
