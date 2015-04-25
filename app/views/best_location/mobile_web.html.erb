@@ -2,9 +2,9 @@
   <table class="table table-striped table-hover ">
     <thead>
     <tr class="warning">
-      <th>#</th>
-      <th>Current Weather</th>
-      <th></th>
+      <th>gps</th>
+      <th><%= @cloud_json['CurrentWeather']['lat'] %></th>
+      <th><%= @cloud_json['CurrentWeather']['lon'] %></th>
     </tr>
     </thead>
     <tbody>
