@@ -13,6 +13,6 @@ class BestLocationController < ApplicationController
   end
 
   def mobile_web
-    request.headers['lat', @cloud_json['CurrentWeather']['lat'], 'long', @cloud_json['CurrentWeather']['long']]
+    response.headers['lat', @cloud_json['CurrentWeather']['lat'], 'long', @cloud_json['CurrentWeather']['long']]
   end
 end
